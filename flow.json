@@ -1,0 +1,17 @@
+{
+  "networks": {
+    "testnet": "access.testnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "testnet-account": {
+      "address": "0xd0963316d56da678",
+      "key": {
+        "type": "hex",
+        "index": 0,
+        "signatureAlgorithm": "ECDSA_P256",
+        "hashAlgorithm": "SHA3_256",
+        "privateKey": "ae4b7ac0f43b80b16f96ce5a0178531a7c1f15f23ec4910fc94290f7c84a1c3b"
+      }
+    }
+  }
+} 

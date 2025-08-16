@@ -1,0 +1,121 @@
+{
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "bd7a891abd496f65c90c2eaded8753e65f544777d8249ea5072959d0ea3c2d06"
+		},
+		"testnet-account": {
+			"address": "0xd0963316d56da678",
+			"key": {
+				"type": "hex",
+				"index": 0,
+				"signatureAlgorithm": "ECDSA_P256",
+				"hashAlgorithm": "SHA3_256",
+				"privateKey": "ae4b7ac0f43b80b16f96ce5a0178531a7c1f15f23ec4910fc94290f7c84a1c3b"
+			}
+		}
+	},
+	"contracts": {
+		"FungibleToken": {
+			"source": "./cadence/contracts/FungibleToken.cdc",
+			"aliases": {
+				"emulator": "0xee82856bf20e2aa6",
+				"testnet": "0x9a0766d93b6608b7"
+			}
+		},
+		"FungibleTokenMetadataViews": {
+			"source": "./cadence/contracts/FungibleTokenMetadataViews.cdc",
+			"aliases": {
+				"emulator": "0xee82856bf20e2aa6",
+				"testnet": "0x9a0766d93b6608b7"
+			}
+		},
+		"ViewResolver": {
+			"source": "./cadence/contracts/ViewResolver.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0x631e88ae7f1d7c20"
+			}
+		},
+		"MetadataViews": {
+			"source": "./cadence/contracts/MetadataViews.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0x631e88ae7f1d7c20"
+			}
+		},
+		"NonFungibleToken": {
+			"source": "./cadence/contracts/NonFungibleToken.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0x631e88ae7f1d7c20"
+			}
+		},
+		"ContributionToken": {
+			"source": "./cadence/contracts/ContributionToken.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0xd0963316d56da678"
+			}
+		},
+		"IPRegistration": {
+			"source": "./cadence/contracts/IPRegistration.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0xd0963316d56da678"
+			}
+		},
+		"ProjectMining": {
+			"source": "./cadence/contracts/ProjectMining.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0xd0963316d56da678"
+			}
+		},
+		"ProjectAuction": {
+			"source": "./cadence/contracts/ProjectAuction.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0xd0963316d56da678"
+			}
+		},
+		"NounsAuctionBridge": {
+			"source": "./cadence/contracts/NounsAuctionBridge.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0xd0963316d56da678"
+			}
+		},
+		"TitleStorage": {
+			"source": "./cadence/contracts/Counter.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7",
+				"testnet": "0xd0963316d56da678"
+			}
+		},
+		"Counter": "./cadence/contracts/Counter.cdc"
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"MetadataViews",
+				"NonFungibleToken",
+				"ContributionToken",
+				"IPRegistration",
+				"ProjectMining",
+				"ProjectAuction",
+				"NounsAuctionBridge",
+				"TitleStorage"
+			]
+		},
+		"testnet": {
+			"testnet-account": ["Counter"]
+		}
+	}
+}
