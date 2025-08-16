@@ -246,6 +246,6 @@ Visual Studio Code with Cadence contract code and terminal output showing <b>suc
   <p>
     <a href="seedora-ruddy.vercel.app">Website</a> •
     <a href="https://www.youtube.com/watch?v=4gktXXOVRQI">Demo</a> •
-    <a href="https://github.com/Prthmsh7/Seedora-PL-Genesis.git">GitHub</a> 
+    <a href="https://github.com/Arrrzushi/seedora">GitHub</a> 
   </p>
 </div>
