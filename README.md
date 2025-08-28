@@ -197,8 +197,8 @@ Visual Studio Code with Cadence contract code and terminal output showing <b>suc
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/Prthmsh7/Seedora-PL-Genesis.git
-   cd Seedora-PL-Genesis
+   git clone https://github.com/Arrrzushi/seedora.git
+   cd Seedora
    ```
 2. **Install dependencies:**
    ```bash
